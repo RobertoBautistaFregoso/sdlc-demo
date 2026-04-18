@@ -9,5 +9,5 @@ def health() -> dict[str, str]:
 
 
 @app.post("/webhook")
-def webhook() -> dict:
+def webhook() -> dict[str, str]:
     return {}
