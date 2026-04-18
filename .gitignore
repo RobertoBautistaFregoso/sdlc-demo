@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editors
+.vscode/
+
+# Build output
+dist/
+build/
+.next/
+
+# Test coverage
+coverage/
