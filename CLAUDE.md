@@ -54,6 +54,7 @@ pytest tests/test_health.py::test_health
 - `src/sdlc_demo/` — application package (src layout; `pythonpath = ["src"]` is set in `pyproject.toml` so tests work without an editable install, though `pip install -e .[dev]` is still recommended).
 - `tests/` — pytest tests; uses `fastapi.testclient.TestClient` (httpx under the hood) — no live server needed.
 - `docs/` — see hierarchy above.
+- `supabase/migrations/` — ordered SQL migration files (`NNNN_<name>.sql`). Apply manually in the Supabase SQL editor in order; there is no migration runner yet.
 - `LEARNINGS.md` — phase-by-phase notes on the SDLC demo project itself; usually not relevant to product code changes.
 
 ## Repo / workflow conventions
